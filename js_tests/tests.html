@@ -8,7 +8,22 @@
 <body>
 
     <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
+    <div id="qunit-fixture">
+    </div>
+    <script type="text/html" id="result-table">
+        <table id="result_list">
+            <tr>
+                <th>
+                   <input type="checkbox" id="action-toggle">
+                </th>
+            </tr>
+            <tr>
+                <td class="action-checkbox">
+                    <input class="action-select" type="checkbox" value="618">
+                </td>
+            </tr>
+        </table>
+    </script>
 
     <script src="./qunit/qunit.js"></script>
     <script src="./qunit/blanket.min.js"></script>
@@ -29,6 +44,9 @@
     <script src='./admin/DateTimeShortcuts.js'></script>
     <script src='../django/contrib/admin/static/admin/js/calendar.js' data-cover></script>
     <script src='../django/contrib/admin/static/admin/js/admin/DateTimeShortcuts.js' data-cover></script>
+
+    <script src='../django/contrib/admin/static/admin/js/actions.js' data-cover></script>
+    <script src='./admin/actions.js'></script>
 
     <script>
        if (location.href.match(/(\?|&)gruntReport($|&|=)/)) {
