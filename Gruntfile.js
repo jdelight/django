@@ -5,9 +5,7 @@ module.exports = function(grunt) {
       default_options: {
         options: {
             urls: [
-                'js_tests/admin/core.html?coverage=true&gruntReport',
-                'js_tests/admin/RelatedObjectLookups.html?coverage=true&gruntReport',
-                'js_tests/admin/timeparse.html?coverage=true&gruntReport',
+                'js_tests/tests.html?coverage=true&gruntReport',
             ]
         },
         files: {
