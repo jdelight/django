@@ -1,0 +1,7 @@
+{
+  "name": "Django",
+  "private": true,
+  "devDependencies": {
+    "node-qunit-phantomjs": "^1.2.0"
+  }
+}
