@@ -9,3 +9,5 @@ docs/locale/
 tests/coverage_html/
 tests/.coverage
 build/
+node_modules/
+tests/report/
