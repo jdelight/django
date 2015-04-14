@@ -2,6 +2,6 @@
   "name": "Django",
   "private": true,
   "devDependencies": {
-    "node-qunit-phantomjs": "^1.2.0"
+    "gulp-qunit": "^1.2.1"
   }
 }

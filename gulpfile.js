@@ -1,8 +1,9 @@
 var gulp = require('gulp');
-var qunit = require('node-qunit-phantomjs');
+var qunit = require('gulp-qunit');
 
 gulp.task('test', function() {
-    qunit('./js_tests/fixture.html');
+    return gulp.src('./js_tests/admin/*.html')
+        .pipe(qunit());
 });
 
 gulp.task('default', ['test']);
