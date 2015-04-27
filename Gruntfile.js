@@ -4,12 +4,10 @@ module.exports = function(grunt) {
     blanket_qunit: {
       default_options: {
         options: {
-            urls: [
-                'js_tests/tests.html?coverage=true&gruntReport',
-            ]
-        },
-        files: {
-        },
+            urls: ['js_tests/tests.html?coverage=true&gruntReport'],
+            globalThreshold: 50,
+            threshold: 10,
+        }
       },
     },
   });
