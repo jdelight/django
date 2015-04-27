@@ -47,13 +47,13 @@ test('Date.getHourMinuteSecond', function(assert) {
   assert.equal(new Date(2014, 6, 1, 17, 45, 30).getHourMinuteSecond(), '17:45:30', '5:45:30 pm is 17:45:30');
 });
 
-test('Date.strftime', function() {
-  expect(0);
+test('Date.strftime', function(assert) {
+  var date = new Date(2014, 6, 1, 11, 0, 5);
+  assert.equal(date.strftime('%Y-%m-%d %H:%M:%S'), '2014-07-01 11:00:05');
 });
 
-test('String.pad_left', function(assert) {
-  //var test_string = new String("test");
-  //test_string = test_string.pad_left(2, "-");
-  //assert.equal(test_string.valueOf(), "--test", "pad left two '-' characters");
-  expect(0);
+test('String.strptime', function(assert) {
+  var date = new Date(1988, 1, 26);
+  assert.equal('1988-02-26'.strptime('%Y-%m-%d').toString(), date.toString());
+  assert.equal('26/02/88'.strptime('%d/%m/%y').toString(), date.toString());
 });
