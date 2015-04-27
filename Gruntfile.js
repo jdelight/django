@@ -1,3 +1,5 @@
+var globalThreshold = 50;  // Global code coverage threshold (as a percentage)
+
 module.exports = function(grunt) {
   grunt.initConfig({
     // Configuration to be run (and then tested).
@@ -5,7 +7,7 @@ module.exports = function(grunt) {
       default_options: {
         options: {
             urls: ['js_tests/tests.html?coverage=true&gruntReport'],
-            globalThreshold: 50,
+            globalThreshold: globalThreshold,
             threshold: 10,
         }
       },
