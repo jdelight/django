@@ -24,6 +24,22 @@
             </tr>
         </table>
     </script>
+    <script type="text/html" id="tabular-formset">
+        <input id="id_first-TOTAL_FORMS" value="1">
+        <input id="id_first-MAX_NUM_FORMS" value="">
+        <table class="inline">
+            <tr id="first-0" class="form-row">
+                <td class="field-test_field">
+                    <input id="id_first-test_field">
+                </td>
+            </tr>
+            <tr id="first-empty" class="empty-row">
+                <td class="field-test_field">
+                    <input id="id_first-test_field">
+                </td>
+            </tr>
+        </table>
+    </script>
 
     <script src="./qunit/qunit.js"></script>
     <script src="./qunit/blanket.min.js"></script>
@@ -47,6 +63,20 @@
 
     <script src='../django/contrib/admin/static/admin/js/actions.js' data-cover></script>
     <script src='./admin/actions.js'></script>
+
+    <script src='../django/contrib/admin/static/admin/js/SelectBox.js' data-cover></script>
+    <script src='./admin/SelectBox.js'></script>
+
+    <script src='../django/contrib/admin/static/admin/js/SelectFilter2.js' data-cover></script>
+    <script src='./admin/SelectFilter2.js'></script>
+
+   <script src='../django/contrib/admin/static/admin/js/inlines.js' data-cover></script>
+    <script src='./admin/inlines.js'></script>
+
+    <script src='../django/contrib/admin/static/admin/js/actions.js' data-cover></script>
+    <script src='../django/contrib/admin/static/admin/js/collapse.js' data-cover></script>
+    <script src='../django/contrib/admin/static/admin/js/prepopulate.js' data-cover></script>
+    <script src='../django/contrib/admin/static/admin/js/urlify.js' data-cover></script>
 
     <script>
        if (location.href.match(/(\?|&)gruntReport($|&|=)/)) {
